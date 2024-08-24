@@ -6,6 +6,8 @@ The interest in this came after the discussion at <https://lore.kernel.org/all/6
 
 Turns out that for bitfields bigger than `sizeof(int)` the behavior is compiler dependent.
 
+<https://github.com/Marcondiro/c_bitfields_integer_promotion/blob/55cff6441aa995a15e08f63afbc31337053493d7/main.c#L1-L33>
+
 ## A bunch of related links
 
 <https://gcc.gnu.org/onlinedocs/gcc/Structures-unions-enumerations-and-bit-fields-implementation.html>
