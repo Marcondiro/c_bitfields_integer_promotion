@@ -21,3 +21,5 @@ Turns out that for bitfields bigger than `sizeof(int)` the behavior is compiler 
 <https://stackoverflow.com/questions/32529080/should-bit-fields-less-than-int-in-size-be-the-subject-of-integral-promotion>
 
 <https://stackoverflow.com/questions/46073295/implicit-type-promotion-rules>
+
+<https://www.open-std.org/jtc1/sc22/wg14/www/docs/n2310.pdf>
