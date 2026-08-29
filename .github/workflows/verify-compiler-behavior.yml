@@ -1,0 +1,13 @@
+name: verify-compiler-behavior
+on: [push, pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          gcc main.c -o g
+          clang main.c -o c
+          gout=$(./g); cout=$(./c)
+          echo "gcc:$gout"; echo "clang:$cout"
+          [ "$gout" != "$cout" ]
